@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
 import { greeting } from '../scr/cli.js';
-import { randomNumber } from '../scr/index.js';
+import { randomNumber, askAndCheckAnswer } from '../scr/index.js';
 
 const userName = greeting();
 console.log('What is the result of the expression?');
@@ -27,14 +26,7 @@ for (let i = 0; i < 3; i += 1) {
     default:
       console.log('Error');
   }
-  console.log(`Question: ${question}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-  if (userAnswer !== correctAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+  if (askAndCheckAnswer(question, correctAnswer, i, userName) === false) {
     break;
-  }
-  console.log('Correct!');
-  if (i === 2) {
-    console.log(`Congratulations, ${userName}!`);
   }
 }
