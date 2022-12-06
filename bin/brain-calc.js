@@ -9,24 +9,24 @@ for (let i = 0; i < 3; i += 1) {
   const randomNumOne = randomNumber(30);
   const randomNumTwo = randomNumber(30);
   let question;
-  let correctAnswer;
+  let correctAnswerStr;
   switch (randomSymbol) {
     case (1):
-      correctAnswer = String(randomNumOne + randomNumTwo);
+      correctAnswerStr = String(randomNumOne + randomNumTwo);
       question = `${randomNumOne} + ${randomNumTwo}`;
       break;
     case (2):
-      correctAnswer = String(randomNumOne - randomNumTwo);
+      correctAnswerStr = String(randomNumOne - randomNumTwo);
       question = `${randomNumOne} - ${randomNumTwo}`;
       break;
     case (3):
-      correctAnswer = String(randomNumOne * randomNumTwo);
+      correctAnswerStr = String(randomNumOne * randomNumTwo);
       question = `${randomNumOne} * ${randomNumTwo}`;
       break;
     default:
       console.log('Error');
   }
-  if (askAndCheckAnswer(question, correctAnswer, i, userName) === false) {
+  if (askAndCheckAnswer(question, correctAnswerStr, i, userName) === false) {
     break;
   }
 }

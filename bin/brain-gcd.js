@@ -13,8 +13,8 @@ for (let i = 0; i < 3; i += 1) {
     randomNumTwo = randomNumOne % randomNumTwo;
     randomNumOne = temp;
   }
-  const correctAnswer = String(randomNumOne);
-  if (askAndCheckAnswer(question, correctAnswer, i, userName) === false) {
+  const correctAnswerStr = String(randomNumOne);
+  if (askAndCheckAnswer(question, correctAnswerStr, i, userName) === false) {
     break;
   }
 }

@@ -6,8 +6,8 @@ const userName = greeting();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 for (let i = 0; i < 3; i += 1) {
   const randomNum = randomNumber(30);
-  const correctAnswer = (randomNum % 2 === 0 ? 'yes' : 'no');
-  if (askAndCheckAnswer(randomNum, correctAnswer, i, userName) === false) {
+  const correctAnswerStr = (randomNum % 2 === 0 ? 'yes' : 'no');
+  if (askAndCheckAnswer(randomNum, correctAnswerStr, i, userName) === false) {
     break;
   }
 }

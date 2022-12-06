@@ -12,9 +12,9 @@ for (let i = 0; i < 3; i += 1) {
   for (let i2 = 1; i2 < 10; i2 += 1) {
     question.push(question[i2 - 1] + randomProgIncrease);
   }
-  const correctAnswer = String(question[randomProgIndex - 1]);
+  const correctAnswerStr = String(question[randomProgIndex - 1]);
   question[randomProgIndex - 1] = '..';
-  if (askAndCheckAnswer(question.join(' '), correctAnswer, i, userName) === false) {
+  if (askAndCheckAnswer(question.join(' '), correctAnswerStr, i, userName) === false) {
     break;
   }
 }
