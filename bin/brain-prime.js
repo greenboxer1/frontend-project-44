@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { greeting } from '../scr/cli.js';
+import greeting from '../scr/cli.js';
 import { randomNumber, askAndCheckAnswer } from '../scr/index.js';
 
 const userName = greeting();

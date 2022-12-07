@@ -13,6 +13,6 @@ export const askAndCheckAnswer = (question, correctAnswerStr, iteration, userNam
   console.log('Correct!');
   if (iteration === 2) {
     console.log(`Congratulations, ${userName}!`);
-    return true;
   }
+  return true;
 };
