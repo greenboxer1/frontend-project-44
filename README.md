@@ -16,9 +16,11 @@ Write the missing digit in the progression
 Test greeting command
 
 ## How to install
-- git clone https://github.com/greenboxer1/frontend-project-44
-- make install
-- make publish
+- install node.js:   **https://nodejs.org/en**
+- install make:   **npm i make**
+- clone the repository:   **git clone https://github.com/greenboxer1/frontend-project-44**
+- download the libraries:   **make install**
+- **make publish**
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/greenboxer1/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/greenboxer1/frontend-project-44/actions)
