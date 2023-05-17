@@ -1,13 +1,15 @@
 install:
 	npm ci
 
+publish: 
+	npm publish --dry-run
+	sudo npm link
+
 brain-games:
 	node bin/brain-games.js
 
-publish: 
-	npm publish --dry-run
-
 lint:
+	npx eslint . --fix
 	npx eslint .
 
 rec:

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import greeting from '../scr/cli.js';
+import games from '../scr/games/brain-games.js';
 
-console.log(greeting());
+games();
